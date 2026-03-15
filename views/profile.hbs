@@ -1,0 +1,24 @@
+<div class="card profile-card">
+  <div class="profile-header">
+    <div class="avatar">{{user.fullName.[0]}}</div>
+    <div>
+      <h1 class="card-title">{{user.fullName}}</h1>
+      <p class="username-tag">@{{user.username}}</p>
+    </div>
+  </div>
+
+  <div class="profile-fields">
+    <div class="field">
+      <span class="field-label"> Email</span>
+      <span class="field-value">{{user.email}}</span>
+    </div>
+    <div class="field">
+      <span class="field-label"> Bio</span>
+      <span class="field-value">{{user.bio}}</span>
+    </div>
+  </div>
+
+  <a href="/logout" class="btn btn-danger btn-full" style="margin-top:1.5rem;">
+    Logout
+  </a>
+</div>

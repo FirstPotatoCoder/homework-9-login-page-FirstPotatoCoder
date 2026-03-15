@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auth App</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="{{theme}}">
+  <nav class="navbar">
+    <span class="brand"> Super Secured Login (#Trust)</span>
+    <div class="nav-actions">
+      <a href="/toggle-theme" class="btn btn-ghost">
+        {{#if (eq theme "dark")}} Light Mode{{else}} Dark Mode{{/if}}
+      </a>
+
+      {{#if user}}
+        <a href="/logout" class="btn btn-outline">Logout</a>
+      {{/if}}
+    </div>
+  </nav>
+
+  <main class="container">
+    {{{body}}}
+  </main>
+</body>
+</html>
