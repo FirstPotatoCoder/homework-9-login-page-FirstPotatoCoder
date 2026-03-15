@@ -45,21 +45,3 @@ npm run dev
 ```
 
 The server runs at `http://localhost:3000` by default.
-
-**Test credentials**
-
-| Username      | Password       |
-| ------------- | -------------- |
-| `admin`       | `password123`  |
-| `student_dev` | `dev_password` |
-
-**Available routes**
-
-| Route           | Method | Description                             |
-| --------------- | ------ | --------------------------------------- |
-| `/`             | GET    | Redirects to `/profile` or `/login`     |
-| `/login`        | GET    | Renders the login form                  |
-| `/login`        | POST   | Validates credentials, creates session  |
-| `/logout`       | GET    | Destroys session, redirects to `/login` |
-| `/profile`      | GET    | Protected — requires active session     |
-| `/toggle-theme` | GET    | Flips the `theme` signed cookie         |
